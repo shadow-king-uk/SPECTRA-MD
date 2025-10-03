@@ -1,0 +1,34 @@
+{
+  "name": "SPECTRA-V2",
+  "description": "A WhatsApp Bot powered by Baileys",
+  "repository": "https://github.com/ghost-king-tz/spectra-v2",
+  "logo": "https://files.catbox.moe/lm4a0b.jpg",
+  "keywords": ["whatsapp", "bot", "baileys", "nodejs"],
+  "env": {
+    "SESSION_ID": {
+      "description": "WhatsApp session ID (starts with lite~ or md~ depending on pairing site)",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Command prefix for the bot",
+      "value": "."
+    },
+    "MODE": {
+      "description": "Bot mode: public / private / group / inbox",
+      "value": "public"
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner WhatsApp number with country code",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Name of bot owner",
+      "value": "𝐆𝐇𝐎𝐒𝐓 𝐊𝐈𝐍𝐆"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
